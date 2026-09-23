@@ -1,0 +1,21 @@
+{
+  "name": "my-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "quality:gate": "npm run typecheck",
+    "test:smoke:stage": "npx ts-node scripts/run-cucumber-env.ts @site-smoke stage:desktop",
+    "test:home:stage:desktop": "npx ts-node scripts/run-cucumber-env.ts \"@home and @regression\" stage:desktop features/Home.feature"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.2.1",
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.2",
+    "dotenv": "^18.0.3",
+    "playwright": "^1.63.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

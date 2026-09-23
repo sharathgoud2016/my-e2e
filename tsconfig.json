@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "types": ["node", "@playwright/test"]
+  },
+  "include": [
+    "step-definitions/**/*",
+    "scripts/**/*",
+    "core/**/*",
+    "pages/**/*"
+  ]
+}
